@@ -1,0 +1,52 @@
+# ===== Spheres config =====
+head-drop-chance: 100   # % шанс, что при убийстве игрока игроком выпадет его голова
+
+# Текстуры голов. Можно вставить base64-значение (Value) ИЛИ 64-символьный хеш текстуры с minecraft-heads.com.
+# Пусто = временная голова моба (MHF_*). Замени на свои красивые текстуры, потом /spheres reload и выдать заново.
+textures:
+  EMPTY: ""
+  FUGU: ""
+  POSEIDON: ""
+  HADES: ""
+  ZEUS: ""
+  HERMES: ""
+  ATHENA: ""
+
+fugu:
+  radius: 2.0
+  poison-level: 1
+  slow-level: 2          # Замедление II
+poseidon:
+  chance: 40
+  slow-level: 2
+  slow-seconds: 4
+  armor-bonus: 4
+  health-loss: 4         # в половинках сердца (4 = 2 сердца)
+hades:
+  chance: 18             # шанс большого фаербола после удара
+  require-both-hands: false   # true = нужны две сферы Аида (в обеих руках)
+  fire-seconds: 6
+  speed-level: 1
+  armor-loss: 3
+  fireball-power: 2
+  fireball-break-blocks: false
+zeus:
+  chance: 4
+  haste-level: 1
+  armor-loss: 2
+hermes:
+  speed-level: 2
+  jump-level: 1
+  health-loss: 6
+athena:
+  resistance-level: 1
+  attack-loss: 2
+
+messages:
+  no-permission: "&cНет прав."
+  reloaded: "&aКонфиг перезагружен."
+  given: "&aВыдано: &f{item} &ax{amount} &aигроку &f{player}"
+  head-dropped: "&7С игрока выпала голова."
+  poseidon-proc: "&b🌊 Враг замедлен!"
+  hades-proc: "&c🔥 Фаербол!"
+  zeus-proc: "&e⚡ Молния!"

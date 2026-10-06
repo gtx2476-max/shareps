@@ -1,0 +1,18 @@
+name: Spheres
+version: 1.0.0
+main: ru.spheres.SpheresPlugin
+api-version: '1.21'
+author: Spheres
+description: Spheres (heads with effects), crafts, head drops and recipe menu
+commands:
+  spheres:
+    description: Меню сфер
+    usage: /spheres [give|reload]
+    aliases: [sphere, sfery]
+permissions:
+  spheres.use:
+    description: Открывать меню сфер
+    default: true
+  spheres.admin:
+    description: Выдача сфер, reload
+    default: op
